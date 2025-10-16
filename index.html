@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="ar">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
-   أكاديمية الذِّكر
-  </title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>أكاديمية الذِّكر | لتعليم العربية والقرآن لغير الناطقين بها</title>
+
+  <!-- SEO -->
+  <meta name="description" content="أكاديمية الذِّكر تقدم دروسًا مميزة في اللغة العربية والقرآن الكريم لغير الناطقين بها، مع معلمين متخصصين ومنهج متكامل من التأسيس حتى الإتقان." />
+  <meta name="keywords" content="تعليم العربية, تعليم القرآن, أكاديمية الذكر, دورات لغة عربية, تعلم التجويد, تعليم أونلاين, Al-Zikr Academy" />
+  <meta name="author" content="Muhammad Samir - أكاديمية الذِّكر" />
+  <meta name="robots" content="index, follow" />
+
   <!-- Favicon -->
-  <link href="images/favicon.png" rel="icon" type="image/png"/>
-  <!-- hreflang alternates (تعديل الروابط عند النشر) -->
-  <link href="/index.html" hreflang="ar" rel="alternate"/>
-  <link href="/en/index.html" hreflang="en" rel="alternate"/>
-  <link href="/es/index.html" hreflang="es" rel="alternate"/>
-  <link href="/index.html" hreflang="x-default" rel="alternate"/>
-  <!-- Performance hints -->
-  <link crossorigin="" href="https://cdn.tailwindcss.com" rel="preconnect"/>
-  <link crossorigin="" href="https://cdnjs.cloudflare.com" rel="preconnect"/>
-  <link crossorigin="" href="https://unpkg.com" rel="preconnect"/>
-  <!-- Tailwind (CDN) -->
-  <script defer="True" src="https://cdn.tailwindcss.com">
-  </script>
-  <!-- Font Awesome (CDN) -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-  <!-- Typed.js (CDN) -->
-  <script defer="True" src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
-  </script>
-  <!-- AOS (CDN) -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-   <script defer="True" src="https://unpkg.com/aos@2.3.4/dist/aos.js">
-   </script>
-   <!-- Google Fonts: Amiri -->
-   <link href="https://fonts.googleapis.com" rel="preconnect"/>
-   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-   <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet"/>
-   <script defer="True" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
-   </script>
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+
+  <!-- Performance: preconnect to origins that serve resources -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Font: Amiri -->
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- External CSS (Font Awesome, AOS) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Tailwind (CDN script) -->
+  <script src="https://cdn.tailwindcss.com" defer></script>
+
+  <!-- JS Libraries (defer) -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+  <script type="application/ld+json" id="structured-data-root"></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="أكاديمية الذِّكر | لتعليم العربية والقرآن" />
+  <meta property="og:description" content="تعلم العربية والقرآن مع أفضل المعلمين عبر الإنترنت." />
+  <meta property="og:image" content="https://alzikracademy.netlify.app/images/og-image.jpg" />
+  <meta property="og:url" content="https://alzikracademy.netlify.app/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="أكاديمية الذِّكر | لتعليم العربية والقرآن" />
+  <meta name="twitter:description" content="تعلم العربية والقرآن عبر الإنترنت بسهولة واحتراف." />
+  <meta name="twitter:image" content="https://alzikracademy.netlify.app/images/og-image.jpg" />
+</head>
    <style>
     :root{
 /* Day */
@@ -808,7 +823,7 @@ body.dark .mode-btn:hover {
    <div class="inner max-w-7xl mx-auto px-6 flex items-center justify-between">
     <!-- Logo + title -->
     <div class="flex items-center gap-3">
-     <img alt="شعار الأكاديمية" class="w-12 h-12 rounded-full border border-gray-200" decoding="async" height="65" id="siteLogo" loading="lazy" src="images/logo.png" width="65"/>
+     <img alt="شعار الأكاديمية" class="w-12 h-12 rounded-full border border-gray-200" decoding="async" height="65" id="siteLogo" loading="lazy" src="iimages/favicon.png" width="65"/>
      <!-- النص يختفي على الموبايل ويظهر من md وفوق -->
      <div class="hidden md:block">
       <h1 class="text-base" data-text="site-title" id="site-title">
@@ -2169,10 +2184,11 @@ document.addEventListener("click", e => {
   function injectStructuredData(lang){
     const org = {
       "@context":"https://schema.org",
-      "@type":"Organization",
+      "@type":"EducationalOrganization",
       "name": translations[lang]?.['site-title'] || 'أكاديمية الذِّكر',
-      "url": window.location.origin + window.location.pathname,
-      "logo": window.location.origin + '/assets/favicon.png'
+      "url": "https://alzikracademy.netlify.app",
+      "description": "أكاديمية لتعليم القرآن الكريم واللغة العربية والعلوم الشرعية للأعاجم.",
+      "logo": window.location.origin + '/images/favicon.png'
     };
     const list = (coursesData[lang] || coursesData.ar).map(c=>({
       "@type":"Course",
