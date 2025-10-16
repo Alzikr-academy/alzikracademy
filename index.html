@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>أكاديمية الذِّكر | لتعليم العربية والقرآن لغير الناطقين بها</title>
 
   <!-- SEO -->
@@ -12,7 +13,7 @@
   <meta name="robots" content="index, follow" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <link rel="icon" type="image/webp" href="/images/favicon.webp" loading="lazy"/>
 
   <!-- Performance: preconnect to origins that serve resources -->
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
@@ -822,7 +823,7 @@ body.dark .mode-btn:hover {
    <div class="inner max-w-7xl mx-auto px-6 flex items-center justify-between">
     <!-- Logo + title -->
     <div class="flex items-center gap-3">
-     <img alt="شعار الأكاديمية" class="w-12 h-12 rounded-full border border-gray-200" decoding="async" height="65" id="siteLogo" loading="lazy" src="/images/favicon.png" width="65"/>
+     <img alt="شعار الأكاديمية" class="w-12 h-12 rounded-full border border-gray-200" decoding="async" height="65" id="siteLogo" loading="lazy" src="/images/favicon.webp" width="65"/>
      <!-- النص يختفي على الموبايل ويظهر من md وفوق -->
      <div class="hidden md:block">
       <h1 class="text-base" data-text="site-title" id="site-title">
@@ -2187,7 +2188,7 @@ document.addEventListener("click", e => {
       "name": translations[lang]?.['site-title'] || 'أكاديمية الذِّكر',
       "url": "https://alzikracademy.netlify.app",
       "description": "أكاديمية لتعليم القرآن الكريم واللغة العربية والعلوم الشرعية للأعاجم.",
-      "logo": window.location.origin + '/images/favicon.png'
+      "logo": window.location.origin + '/images/favicon.webp'
     };
     const list = (coursesData[lang] || coursesData.ar).map(c=>({
       "@type":"Course",
