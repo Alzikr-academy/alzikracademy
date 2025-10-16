@@ -287,7 +287,7 @@ body.dark .blog-card::before {
     #whatsappFloat{
       position:fixed; inset-inline-start:18px; inset-block-end:18px; z-index:2500;
       display:flex; align-items:center; justify-content:center; gap:.5rem;
-      padding:.55rem .9rem; border-radius:999px; background:#25D366; color:#fff; font-weight:800;
+      padding:.55rem .9rem; border-radius:999px; background:#25D366; color:#000000; font-weight:800;
       box-shadow: 0 20px 40px rgba(37,211,102,.35);
       animation: waPulse 2.2s ease-in-out infinite;
       transform-origin:center;
@@ -799,7 +799,7 @@ body.dark .mode-btn:hover {
    </div>
   </div>
   <!-- زر عائم للهاتف -->
-  <button class="fixed bottom-16 right-5 z-[9999] md:hidden bg-gradient-to-r from-yellow-400 to-blue-400 text-white rounded-full w-14 h-14 shadow-xl flex items-center justify-center animate-bounce" id="giftBtn">
+  <button class="fixed bottom-16 right-5 z-[9999] md:hidden bg-gradient-to-r from-yellow-400 to-blue-400 text-white rounded-full w-14 h-14 shadow-xl flex items-center justify-center animate-bounce" id="giftBtn" aria-label="عرض الهدية">
    <i class="fa-solid fa-gift text-2xl">
    </i>
   </button>
@@ -1022,11 +1022,11 @@ body.dark .mode-btn:hover {
    </div>
   </nav>
   <!-- HERO -->
-  <section class="fade-section show" id="hero">
+  <section id="hero">
    <div class="hero-background" id="particles-js">
    </div>
    <div class="hero-content max-w-4xl mx-auto px-6 text-center relative z-10">
-    <h2 class="hero-title mb-3 enter" id="heroTitle">
+    <h2 class="hero-title mb-3" id="heroTitle">
      <span data-text="hero-academy">
       أكاديمية
      </span>
@@ -1034,7 +1034,7 @@ body.dark .mode-btn:hover {
       الذِّكر
      </span>
     </h2>
-    <p class="hero-sub mb-6 enter" id="heroSub">
+    <p class="hero-sub mb-6" id="heroSub">
      <span data-text="hero-static">
       تعلم
      </span>
@@ -1042,7 +1042,7 @@ body.dark .mode-btn:hover {
      </span>
     </p>
     <!-- تعديل هنا: نستخدم flex-col على الهواتف (sm: => شاشات أكبر تبقى row) -->
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 enter" id="heroCta">
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4" id="heroCta">
      <a aria-label="ابدأ رحلتك" class="btn hero-cta-btn w-full sm:w-auto" data-text="hero-cta" href="#fields">
       ابدأ رحلتك
      </a>
@@ -1145,10 +1145,10 @@ body.dark .mode-btn:hover {
       </li>
      </ul>
     </div>
-    <!-- الفيديو بدل الصورة -->
+ الفيديو
     <div class="rounded-card overflow-hidden">
-     <video class="w-full h-full object-cover" controls="" playsinline="" poster="https://via.placeholder.com/1200x600?text=Video+Placeholder" preload="metadata">
-      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"/>
+     <video class="w-full h-full object-cover" controls="" playsinline="" poster="https://i.ibb.co/gLt6c6bN/8b97a50e-e966-469c-8c1b-066797bcfdf0.jpg">
+      <source src="https://youtube.com/shorts/PKX1oPMX-cI?si=fvhPFPruPjuDNezc" type="video/mp4"/>
       <p data-text="video-alt">
        متصفحك لا يدعم تشغيل الفيديو
       </p>
@@ -1908,7 +1908,7 @@ subscribeBtn.addEventListener('click', (e) => {
       const dict = translations[lang] || translations.ar;
       card.innerHTML = `
         <span class="course-badge"><i class="fa-solid fa-gift" aria-hidden="true"></i>${dict['badge-free']||''}</span>
-        <img src="${c.img}" class="w-full h-48 object-cover rounded mb-3" loading="lazy" decoding="async" width="600" height="360"/>
+        <img src="${c.img}" class="w-full h-48 object-cover rounded mb-3" loading="lazy" decoding="async" width="600" height="360" alt="صورة تعبيرية لدورة تحفيظ القرآن الكريم وتجويده"/>
         <h3 class="text-xl mb-1">${c.title}</h3>
         <p class="text-sm muted mb-3">${c.desc||''}</p>
         <div class="offer-box mb-3">
